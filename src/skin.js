@@ -374,7 +374,7 @@ function installSkin() {
   }
 
   window.__ffSkin = {
-    version: '1.0.0',
+    version: '1.0.1',
     replay: function () { playFilm(true); },
     toggleAmbient: function () {
       var next = !ambientEnabled();

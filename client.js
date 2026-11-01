@@ -1,5 +1,5 @@
 /**
- * dsh-firefly-skin v1.0.0 — browser half.
+ * dsh-firefly-skin v1.0.1 — browser half.
  * Firefly (流萤) skin for the DeepSeek Harness web client:
  * boot film, night palette, ambient fireflies and a replay control.
  *
@@ -1665,7 +1665,7 @@ function installSkin() {
   }
 
   window.__ffSkin = {
-    version: '1.0.0',
+    version: '1.0.1',
     replay: function () { playFilm(true); },
     toggleAmbient: function () {
       var next = !ambientEnabled();

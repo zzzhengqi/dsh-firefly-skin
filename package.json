@@ -1,7 +1,6 @@
 {
   "name": "dsh-firefly-skin",
-  "version": "1.0.0",
-  "private": true,
+  "version": "1.0.1",
   "type": "module",
   "description": "流萤 Firefly 皮肤：为 DeepSeek Harness Web 客户端提供「线条起笔 → 上色 → 睁眼」载入动画、夜航配色、环境萤火与重播按钮。",
   "keywords": [

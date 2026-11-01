@@ -1,6 +1,6 @@
 # 流萤 · Firefly — DeepSeek Harness UI 皮肤
 
-版本：**1.0.0**  
+版本：**1.0.1**  
 作者：[zzzhengqi](https://github.com/zzzhengqi)  
 宿主：DeepSeek Harness 桌面端 / Web GUI（`@deepseek-ai/dsh-client-modules` 客户端插件）  
 许可：代码 [MIT](LICENSE) · 美术素材 [CC BY-NC 4.0](ASSETS-LICENSE.md)
@@ -36,27 +36,35 @@
 
 ## 二、安装
 
-### 方式 A：粘贴链接安装（推荐）
+### 方式 A：输入插件名安装（推荐）
 
-打开 DSH 侧边栏 **插件** 页 → 右上角 **添加插件** → 粘贴下面的链接：
+打开 DSH 侧边栏 **插件** 页 → 右上角 **添加插件** → 安装源选 **npm 官方源** → 输入：
+
+```text
+dsh-firefly-skin
+```
+
+点 **安装**，装好后刷新页面或重启 DSH 即可。
+
+> 以前用本地文件夹方式装过的话：先在插件页卸载旧的 `dsh-firefly-skin`，**完全退出 DSH（包括托盘图标）再重新打开**，然后再安装。否则 DSH 可能还会去读旧文件夹的位置，报 `ENOENT: no such file or directory`。
+
+### 方式 B：粘贴 GitHub 链接安装
+
+同样在 **添加插件** 里，粘贴下面的链接：
 
 ```text
 https://github.com/zzzhengqi/dsh-firefly-skin.git
 ```
 
-装好后刷新页面或重启 DSH 即可。
-
 > 需要能访问 GitHub。也可以填写简写 `github:zzzhengqi/dsh-firefly-skin`。
->
-> 以前用本地文件夹方式装过的话：先在插件页卸载旧的 `dsh-firefly-skin`，**完全退出 DSH（包括托盘图标）再重新打开**，然后粘贴链接安装。否则 DSH 可能还会去读旧文件夹的位置，报 `ENOENT: no such file or directory`。
 
-### 方式 B：下载 zip 安装（粘贴链接安装失败时）
+### 方式 C：下载 zip 安装（以上两种都失败时）
 
 1. 在 [Releases](https://github.com/zzzhengqi/dsh-firefly-skin/releases) 下载最新的 zip 并解压，把 `dsh-firefly-skin/` 文件夹放到固定位置，例如 `%USERPROFILE%\.dsh\plugins\dsh-firefly-skin`。
 2. 打开 DSH 侧边栏 **插件** 页 → 右上角 **添加插件** → 选择这个文件夹。
 3. 刷新页面或重启 DSH。
 
-### 方式 C：手动挂载（开发者）
+### 方式 D：手动挂载（开发者）
 
 profile 目录：`%USERPROFILE%\.dsh\profiles\desktop`
 
