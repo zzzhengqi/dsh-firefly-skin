@@ -36,18 +36,27 @@
 
 ## 二、安装
 
-### 方式 A：插件页安装（推荐）
+### 方式 A：粘贴链接安装（推荐）
 
-1. 获取插件：在 [Releases](https://github.com/zzzhengqi/dsh-firefly-skin/releases) 下载最新的 zip 并解压，或者  
-   `git clone https://github.com/zzzhengqi/dsh-firefly-skin.git`。  
-   把整个 `dsh-firefly-skin/` 文件夹放到一个固定位置，例如  
-   `%USERPROFILE%\.dsh\plugins\dsh-firefly-skin`
-2. 打开 DSH 侧边栏 **插件** 页 → 右上角 **添加插件** → 选择该文件夹（本地路径）。
-3. 在「已安装插件」里确认 `dsh-firefly-skin` 已启用，刷新页面或重启应用。
+打开 DSH 侧边栏 **插件** 页 → 右上角 **添加插件** → 粘贴下面的链接：
 
-> 插件页也支持 `link:` 本地目录。安装后它会出现在 profile 的 `dsh.profile.bundles` 中。
+```text
+https://github.com/zzzhengqi/dsh-firefly-skin.git
+```
 
-### 方式 B：手动挂载
+装好后刷新页面或重启 DSH 即可。
+
+> 需要能访问 GitHub。也可以填写简写 `github:zzzhengqi/dsh-firefly-skin`。
+>
+> 以前用本地文件夹方式装过的话：先在插件页卸载旧的 `dsh-firefly-skin`，**完全退出 DSH（包括托盘图标）再重新打开**，然后粘贴链接安装。否则 DSH 可能还会去读旧文件夹的位置，报 `ENOENT: no such file or directory`。
+
+### 方式 B：下载 zip 安装（粘贴链接安装失败时）
+
+1. 在 [Releases](https://github.com/zzzhengqi/dsh-firefly-skin/releases) 下载最新的 zip 并解压，把 `dsh-firefly-skin/` 文件夹放到固定位置，例如 `%USERPROFILE%\.dsh\plugins\dsh-firefly-skin`。
+2. 打开 DSH 侧边栏 **插件** 页 → 右上角 **添加插件** → 选择这个文件夹。
+3. 刷新页面或重启 DSH。
+
+### 方式 C：手动挂载（开发者）
 
 profile 目录：`%USERPROFILE%\.dsh\profiles\desktop`
 
