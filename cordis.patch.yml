@@ -1,0 +1,8 @@
+# dsh-firefly-skin bundle patch.
+#
+# 一行 insert 挂载 Host 半身（预涂深色画布）；浏览器半身由 package.json 的
+# dsh.client 声明，并绑定在 name 为裸包名的这一行上。
+- insert:
+    - id: firefly-skin
+      name: 'dsh-firefly-skin'
+      config: {}
